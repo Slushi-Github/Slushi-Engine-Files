@@ -90,14 +90,14 @@ function Shader3DX(valueX, time, ease)
 -- valueX = valor en la cordenada X.
 -- time = tiempo del tween
 -- ease = tipo de ease
-end -- [>SLE_VER]
+end -- [>SLE_VER -- NO_RECOM]
 
 function Shader3DY(valueY, time, ease)
 -- hacer un tween en Y al shader 3D.
 -- valueY = valor en la cordenada Y.
 -- time = tiempo del tween.
 -- ease = tipo de ease.
-end -- [>SLE_VER]
+end -- [>SLE_VER-- NO_RECOM]
 
 function ACShader(value, time, ease)
 -- hacer un tween al shader de Chromatic Abberation.
