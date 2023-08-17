@@ -3,7 +3,7 @@ Este es el documento de todas las funciones Lua existentes dentro de Slushi Engi
 
 VERSION DEL DOCUMENTO = v1.0 -- 15/08/2023
 
-[ECHO EN BASE A:
+[HECHO EN BASE A:
 VERSION DE PE: 0.7.1h -- VERSION DE SLE: V.0.0.8 -- VERSION DE SCE: 0.1.2 BETA]
 ]]--
 
