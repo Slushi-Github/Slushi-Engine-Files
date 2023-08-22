@@ -1,4 +1,5 @@
-  "functions": {
+{
+"functions": {
     "winTrans": {
             "returns": "boolean",
             "args": "Trans:Bool, Black:Bool",
@@ -24,4 +25,30 @@
               "args": "error:String, realCrash:Bool = true",
               "documentation": "Crashea el juego a proposito"
           },
-        
+        "moveSLELogoX": {
+              "returns": "String",
+              "args": "valueX:String, time:String, ease:String",
+              "documentation": "[Lua] Hacer un tween en X al todo el logo de Slushi Engine. Si el valueX es 0, volera a la posicion original"
+          },
+        "moveSLELogoY": {
+              "returns": "String",
+              "args": "alpha:String, time:String",
+              "documentation": "[Lua] cambia el alpha del fondo que oscurece el logo de Slushi Engine. Si el alpha es 'default', volera a al alpha original"
+          },
+        "setBlackAlpha": {
+              "returns": "String",
+              "args": "valueY:String, time:String, ease:String",
+              "documentation": "[Lua] Hacer un tween en Y al todo el logo de Slushi Engine. Si el valueY es 0, volera a la posicion original"
+          }
+        },
+      "variables": {
+        "ShowSLELogo": {
+            "returns": "boolean",
+            "documentation": "[Lua] Muestra o no el logo de Slushi Engine."
+        },
+        "ShowCamGame ": {
+            "returns": "boolean",
+            "documentation": "[Lua] Muestra o no la camGame del juego."
+        }
+      }
+    }
