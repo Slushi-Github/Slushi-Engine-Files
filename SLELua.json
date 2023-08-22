@@ -1,0 +1,27 @@
+  "functions": {
+    "winTrans": {
+            "returns": "boolean",
+            "args": "Trans:Bool, Black:Bool",
+            "documentation": "Hace la ventana del juego Transparente"
+        },
+        "winAlert": {
+            "returns": "String",
+            "args": "text:String, title:String",
+            "documentation": "Crea una alerta en forma de ventana"
+        },
+        "winShake": {
+            "returns": "number",
+            "args": "value:String",
+            "documentation": "Hace temblar la pantalla"
+        },
+        "winTitle": {
+                "returns": "String",
+                "args": "text:String",
+                "documentation": "Cambia el nombre de la ventana del juego"
+            },
+        "gameCrash": {
+              "returns": "String",
+              "args": "error:String, realCrash:Bool = true",
+              "documentation": "Crashea el juego a proposito"
+          },
+        
