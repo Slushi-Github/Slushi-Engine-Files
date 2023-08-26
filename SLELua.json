@@ -5,6 +5,24 @@
             "args": "Trans:Bool, Black:Bool",
             "documentation": "Hace la ventana del juego Transparente"
         },
+
+        "centerWindow": {
+            "returns": "",
+            "documentation": "centra la ventana del juego en la pantalla"
+        },
+
+        "WindowAlpha": {
+            "returns": "number",
+            "args": "value:String",
+            "documentation": "cambia el alpha de la ventana"
+        },
+
+        "doTweenWinAlpha": {
+            "returns": "number",
+            "args": "fromValue:String, toValue:String, duration:String",
+            "documentation": "cambia el alpha de la ventana pero con un tween"
+        },
+    
         "winAlert": {
             "returns": "String",
             "args": "text:String, title:String",
@@ -13,7 +31,7 @@
         "winShake": {
             "returns": "number",
             "args": "value:String",
-            "documentation": "Hace temblar la pantalla"
+            "documentation": "Hace temblar la ventana"
         },
         "winTitle": {
                 "returns": "String",
