@@ -24,9 +24,9 @@ Lua dependiendiendo de ciertos casos:
 
 -- FUNCIONES HARDCODEADAS DEL FNF: -----------------
 function winTrans(Trans, Black)
--- hace la ventana del juego Transparente
--- trans = activa o desactiva la transparencia =  (true/false)
--- Black = coloca o no un fondo negro en CamGame = (true/false)
+-- hace la ventana del juego Transparente.
+-- trans = activa o desactiva la transparencia =  (true/false).
+-- Black = coloca o no un fondo negro en CamGame = (true/false).
 end -- [SCE_NULL -- <SLE_VER]
 
 function WindowAlpha(value)
@@ -35,25 +35,25 @@ function WindowAlpha(value)
 end -- [>SLE_VER]
 
 function doTweenWinAlpha(fromValue, toValue, duration)
--- cambia el alpha de la ventana pero con un tween
--- fromValue = el valor inicial
--- toValue: = el valor al que ira el alpha
+-- cambia el alpha de la ventana pero con un tween.
+-- fromValue = el valor inicial.
+-- toValue: = el valor al que ira el alpha.
 -- duration = tiempo del tween.
 end -- [>SLE_VER]
 
 function centerWindow()
--- centra la ventana del juego en la pantalla
+-- centra la ventana del juego en la pantalla.
 end -- [>SLE_VER]
 
 function winRushX(value)
--- Mmm... no puedo explicar que hace esto
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo
+-- Mmm... no puedo explicar que hace esto.
+-- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
 end -- [>SLE_VER -- NO_RECOM]
 
 function winAlert(text, title)
--- crea una alerta en forma de ventana
--- text = el texto que llevara el mensaje
--- title = el titulo de la ventana
+-- crea una alerta en forma de ventana.
+-- text = el texto que llevara el mensaje.
+-- title = el titulo de la ventana.
 end -- [<SLE_VER]
 
 function winShake(value)
