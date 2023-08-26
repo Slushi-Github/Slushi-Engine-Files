@@ -1,5 +1,5 @@
 --[[
-Este es el documento de todas las funciones Lua existentes dentro de Slushi Engine, todo por mi, Slushi
+Este es el documento de todas las funciones Lua existentes dentro de Slushi Engine, todo por mi, Slushi.
 
 VERSION DEL DOCUMENTO = v1.1 -- 26/08/2023
 
