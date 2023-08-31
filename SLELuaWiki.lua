@@ -1,14 +1,14 @@
 --[[
 Este es el documento de todas las funciones Lua existentes dentro de Slushi Engine, todo por mi, Slushi.
 
-VERSION DEL DOCUMENTO = v1.1 -- 26/08/2023
+VERSION DEL DOCUMENTO = v1.2.1 -- 31/08/2023
 
 [LOG:
-Nuevas o cambios en funciones Lua y su documentacion, y arreglos en la organizacion del .lua en general.
+Extras a funciones Lua, y unos nuevos avisos, ademas de tambien unas nuevas funciones
 ]
 
 [HECHO EN BASE A:
-VERSION DE PE: 0.7.1h -- VERSION DE SLE: V.0.0.8 -- VERSION DE SCE: 0.1.2 BETA]
+VERSION DE PE: 0.7.1h -- VERSION DE SLE: 0.1.0 -- VERSION DE SCE: 0.1.2 BETA]
 ]]--
 
 
@@ -16,10 +16,12 @@ VERSION DE PE: 0.7.1h -- VERSION DE SLE: V.0.0.8 -- VERSION DE SCE: 0.1.2 BETA]
 Estos avisos estaran al final de cada funcion Lua o incluso variable, incidan la compatiblidad y estado de la funcion
 Lua dependiendiendo de ciertos casos:
 [SCE_NULL = No necesario estar en SC Engine]
-[<SLE_VER = Compatible con versiones anteriores de Slushi Engine (0.0.5, 0.0.4)]
+[<SLE_VER = Funcion existente o compatible con versiones anteriores de Slushi Engine (0.0.5, 0.0.4)]
 [>SLE_VER = Compatible con versiones nuevas de Slushi Engine (0.0.8...)]
+[<>SLE_VER = Compatible con versiones nuevas y anteriores de Slushi Engine con pocos cambios (0.0.8... o 0.0.5...)]
 [PE_ERROR = Funcion existente, pero rota por Psych Engine 0.7.1h]
-[NO_RECOM = Funcion existente, pero no recomendada por estar un poco rota o incompleta o ser inecesaria para la mayoria]
+[NO_RECOM = Funcion existente, pero no recomendada por estar rota o incompleta o ser inecesaria para la mayoria]
+[WARNING = Funcion existente, pero no recomendada porque podria ser incomoda para el jugador]
 ]]--
 
 -- FUNCIONES HARDCODEADAS DEL FNF: -----------------
@@ -45,10 +47,28 @@ function centerWindow()
 -- centra la ventana del juego en la pantalla.
 end -- [>SLE_VER]
 
-function winRushX(value)
--- Mmm... no puedo explicar que hace esto.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [>SLE_VER -- NO_RECOM]
+function getRAM()
+-- obten el numero entero de la RAM del equipo.
+end -- [>SLE_VER]
+
+function alwaysOnTop(mode)
+-- superpone la ventana del juego por encima de todo elemento de Windows.
+-- mode = false o true, para activar o no la funcion.
+end -- [>SLE_VER]
+
+function hideTaskBar(hide)
+-- oculta la barra de tareas de Windows.
+-- hide = false o true, para activar o no la funcion.
+end -- [>SLE_VER -- WARNING]
+
+function setWallpaper(image)
+-- oculta la barra de tareas de Windows.
+-- hide = false o true, para activar o no la funcion.
+end -- [>SLE_VER -- WARNING -- NO_RECOM]
+
+function getLanguage()
+-- obten el idioma en el que se configuro el juego, para traducir textos y ese tipo de cosas.
+end -- [>SLE_VER]
 
 function winAlert(text, title)
 -- crea una alerta en forma de ventana.
@@ -61,35 +81,42 @@ function winShake(value)
 -- value = valor de la intensidad del temblor.
 end -- [<SLE_VER]
 
-function doTweenWinX(value, duration, ease)
--- mueve la ventana en la cordenada X con un tween.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [NO_RECOM]
+function DisableCloseButton(mode)
+-- impide que el jugador cierre el juego usando la flechita de la ventana o Alt+F4.
+-- mode = false o true, para activar o no la funcion.
+-- dato: usala en las funciones onUpdate o onUpdatePost.
+end -- [>SLE_VER]
 
-function doTweenWinY(value, duration, ease)
+function doTweenWinX(tag, value, duration, ease)
+-- mueve la ventana en la cordenada X con un tween.
+-- tag = el nombre que tendra ese tween.
+-- value = valor en la cordenada X.
+-- duration = tiempo del tween.
+-- ease = tipo de ease. 
+end -- [>SLE_VER]
+
+function doTweenWinY(tag, value, duration, ease)
 -- mueve la ventana en la cordenada Y con un tween.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [NO_RECOM]
+-- tag = el nombre que tendra ese tween.
+-- value = valor en la cordenada Y.
+-- duration = tiempo del tween.
+-- ease = tipo de ease. 
+end -- [>SLE_VER]
 
 function winTitle(text)
 -- cambia el nombre de la ventana del juego.
--- text = el nuevo titulo de la ventana el valor "text", si se le pone "titledef", se volvera al titulo original.
-end -- [<SLE_VER -- SCE_NULL -- NO_RECOM...?]
+-- text = el nuevo titulo de la ventana el valor "text", si se le pone "default", (si estas en en una version de SLE inferior a la v0.1.0 es "titledef") se volvera al titulo original.
+end -- [<>SLE_VER -- SCE_NULL -- NO_RECOM...?]
 
-function winPos(X, Y)
--- mueve la ventana en la cordenada X y Y.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [NO_RECOM]
+function setWinPosX(X)
+-- mueve la ventana en la cordenada X.
+-- X = la cordenada X
+end -- [>SLE_VER]
 
-function winDimX(Width)
--- redimenciona la ventana en lo ancho.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [NO_RECOM]
-
-function winDimY(Height)
--- redimenciona la ventana en lo alto.
--- Esta al ser una funcion con el aviso [NO_RECOM], no me pondre a explicarlo.
-end -- [NO_RECOM] 
+function setWinPosY(Y)
+-- mueve la ventana en la cordenada Y.
+-- X = la cordenada Y
+end -- [>SLE_VER]
 
 function gameCrash(error, realCrash)
 -- crashea el juego a proposito, usalo con cuidado
