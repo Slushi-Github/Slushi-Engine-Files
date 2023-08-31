@@ -63,7 +63,7 @@ end -- [>SLE_VER -- WARNING]
 
 function setWallpaper(image)
 -- oculta la barra de tareas de Windows.
--- hide = false o true, para activar o no la funcion.
+-- image = el nombre de la imagen a poner, que debe estar en mods/images/wallpapers.
 end -- [>SLE_VER -- WARNING -- NO_RECOM]
 
 function getLanguage()
@@ -105,7 +105,7 @@ end -- [>SLE_VER]
 
 function winTitle(text)
 -- cambia el nombre de la ventana del juego.
--- text = el nuevo titulo de la ventana el valor "text", si se le pone "default", (si estas en en una version de SLE inferior a la v0.1.0 es "titledef") se volvera al titulo original.
+-- text = el nuevo titulo de la ventana, el valor "text", si se le pone "default", (si estas en en una version de SLE inferior a la v0.1.0 es "titledef") se volvera al titulo original.
 end -- [<>SLE_VER -- SCE_NULL -- NO_RECOM...?]
 
 function setWinPosX(X)
@@ -127,27 +127,6 @@ end -- [<SLE_VER]
 
 -- FUNCIONES EN SCRIPTS LUA: -------------------------------------------------------------
 -- esto, quiere decir que es una funcion de Lua ubicada en algun script Lua existente en mods/scripts.
-function Shader3DX(valueX, time, ease)
--- hacer un tween en X al shader 3D.
--- valueX = valor en la cordenada X.
--- time = tiempo del tween.
--- ease = tipo de ease.
-end -- [>SLE_VER -- NO_RECOM]
-
-function Shader3DY(valueY, time, ease)
--- hacer un tween en Y al shader 3D.
--- valueY = valor en la cordenada Y.
--- time = tiempo del tween.
--- ease = tipo de ease.
-end -- [>SLE_VER-- NO_RECOM]
-
-function ACShader(value, time, ease)
--- hacer un tween al shader de Chromatic Abberation.
--- valueY = valor.
--- time = tiempo del tween.
--- ease = tipo de ease.
-end -- [>SLE_VER -- NO_RECOM]
-
 function moveSLELogoX(valueX, time, ease)
 -- hacer un tween en X al todo el logo de Slushi Engine.
 -- valueX = valor en la cordenada X.
@@ -177,8 +156,4 @@ end -- [>SLE_VER]
 ShowSLELogo = (true/false) -- muestra o no el logo de Slushi Engine. -- [>SLE_VER]
 ShowCamGame = (true/false) -- muestra o no la camGame del juego. -- [>SLE_VER]
 useIndividualNotesSprite = (true/false) -- Incompleto. -- [>SLE_VER -- NO_RECOM]
-
-forceShaders = (true/false) -- forzar o no los shaders. -- [>SLE_VER -- NO_RECOM]
-Shader3D = (true/false) -- usar o no el shader 3D. -- [>SLE_VER -- NO_RECOM]
-ACShader = (true/false) -- usar o no el shader de Chromatic Abberation. -- [>SLE_VER -- NO_RECOM]
 ------------------------------------------------------------------------------------------
