@@ -1,10 +1,10 @@
 --[[
 Este es el documento de todas las funciones Lua existentes dentro de Slushi Engine, todo por mi, Slushi.
 
-VERSION DEL DOCUMENTO = v1.2.1 -- 31/08/2023
+VERSION DEL DOCUMENTO = v1.2.2 -- 31/08/2023
 
 [LOG:
-Extras a funciones Lua, y unos nuevos avisos, ademas de tambien unas nuevas funciones
+Acomodar la funcion setWallpaper()
 ]
 
 [HECHO EN BASE A:
@@ -64,7 +64,7 @@ end -- [>SLE_VER -- WARNING]
 function setWallpaper(image)
 -- oculta la barra de tareas de Windows.
 -- image = el nombre de la imagen a poner, que debe estar en mods/images/wallpapers.
-end -- [>SLE_VER -- WARNING -- NO_RECOM]
+end -- [>SLE_VER -- WARNING]
 
 function getLanguage()
 -- obten el idioma en el que se configuro el juego, para traducir textos y ese tipo de cosas.
