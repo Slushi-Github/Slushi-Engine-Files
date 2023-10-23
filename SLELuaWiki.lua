@@ -1,14 +1,14 @@
 --[[
 Este es el documento de todas las funciones Lua existentes dentro de Slushi Engine, todo por mi, Slushi.
 
-VERSION DEL DOCUMENTO = v1.2.2 -- 31/08/2023
+VERSION DEL DOCUMENTO = v1.2.3 -- 23/10/2023
 
 [LOG:
-Acomodar la funcion setWallpaper()
+null
 ]
 
 [HECHO EN BASE A:
-VERSION DE PE: 0.7.1h -- VERSION DE SLE: 0.1.0 -- VERSION DE SCE: 0.1.2 BETA]
+VERSION DE PE: 0.7.1h -- VERSION DE SLE: 0.1.5 [Beta] -- VERSION DE SCE: 0.2.3 Beta]
 ]]--
 
 
@@ -22,6 +22,10 @@ Lua dependiendiendo de ciertos casos:
 [PE_ERROR = Funcion existente, pero rota por Psych Engine 0.7.1h]
 [NO_RECOM = Funcion existente, pero no recomendada por estar rota o incompleta o ser inecesaria para la mayoria]
 [WARNING = Funcion existente, pero no recomendada porque podria ser incomoda para el jugador]
+]]--
+
+--[[
+Todas, y digo TODAS, estas funciones que veran aca, se necesita que el modo developer este activado.
 ]]--
 
 -- FUNCIONES HARDCODEADAS DEL FNF: -----------------
@@ -123,10 +127,7 @@ function gameCrash(error, realCrash)
 -- error = el texto del motivo del error, si se deja vacio, sera "Null Object Reference".
 -- realCrash = crasheara verdaderamente el juego, y se cerrara (true/false).
 end -- [<SLE_VER]
-------------------------------------------------------------------------------------------
 
--- FUNCIONES EN SCRIPTS LUA: -------------------------------------------------------------
--- esto, quiere decir que es una funcion de Lua ubicada en algun script Lua existente en mods/scripts.
 function moveSLELogoX(valueX, time, ease)
 -- hacer un tween en X al todo el logo de Slushi Engine.
 -- valueX = valor en la cordenada X.
@@ -151,9 +152,8 @@ function setBlackAlpha(alpha, time)
 end -- [>SLE_VER]
 ------------------------------------------------------------------------------------------
 
--- VARIABLES DE SCRIPTS LUA --------------------------------------------------------------
--- esto, quiere decir que es una variable de Lua ubicada en algun script Lua existente en mods/scripts.
-ShowSLELogo = (true/false) -- muestra o no el logo de Slushi Engine. -- [>SLE_VER]
-ShowCamGame = (true/false) -- muestra o no la camGame del juego. -- [>SLE_VER]
-useIndividualNotesSprite = (true/false) -- Incompleto. -- [>SLE_VER -- NO_RECOM]
+-- FUNCIONES EN SCRIPTS LUA: -------------------------------------------------------------
+-- esto, quiere decir que es una funcion de Lua ubicada en algun script Lua existente en mods/scripts.
+-- nada, por los momeentos.
 ------------------------------------------------------------------------------------------
+
