@@ -5,24 +5,6 @@
             "args": "Trans:Bool, Black:Bool",
             "documentation": "Hace la ventana del juego Transparente"
         },
-
-        "centerWindow": {
-            "returns": "",
-            "documentation": "centra la ventana del juego en la pantalla"
-        },
-
-        "WindowAlpha": {
-            "returns": "number",
-            "args": "value:String",
-            "documentation": "cambia el alpha de la ventana"
-        },
-
-        "doTweenWinAlpha": {
-            "returns": "number",
-            "args": "fromValue:String, toValue:String, duration:String",
-            "documentation": "cambia el alpha de la ventana pero con un tween"
-        },
-    
         "winAlert": {
             "returns": "String",
             "args": "text:String, title:String",
@@ -31,7 +13,7 @@
         "winShake": {
             "returns": "number",
             "args": "value:String",
-            "documentation": "Hace temblar la ventana"
+            "documentation": "Hace temblar la pantalla"
         },
         "winTitle": {
                 "returns": "String",
@@ -46,27 +28,47 @@
         "moveSLELogoX": {
               "returns": "String",
               "args": "valueX:String, time:String, ease:String",
-              "documentation": "[Lua] Hacer un tween en X al todo el logo de Slushi Engine. Si el valueX es 0, volera a la posicion original"
+              "documentation": "Hacer un tween en X al todo el logo de Slushi Engine. Si el valueX es 0, volera a la posicion original"
           },
         "moveSLELogoY": {
               "returns": "String",
               "args": "alpha:String, time:String",
-              "documentation": "[Lua] cambia el alpha del fondo que oscurece el logo de Slushi Engine. Si el alpha es 'default', volera a al alpha original"
+              "documentation": "cambia el alpha del fondo que oscurece el logo de Slushi Engine. Si el alpha es 'default', volera a al alpha original"
           },
         "setBlackAlpha": {
               "returns": "String",
               "args": "valueY:String, time:String, ease:String",
-              "documentation": "[Lua] Hacer un tween en Y al todo el logo de Slushi Engine. Si el valueY es 0, volera a la posicion original"
-          }
-        },
-      "variables": {
-        "ShowSLELogo": {
-            "returns": "boolean",
-            "documentation": "[Lua] Muestra o no el logo de Slushi Engine."
-        },
-        "ShowCamGame ": {
-            "returns": "boolean",
-            "documentation": "[Lua] Muestra o no la camGame del juego."
+              "documentation": "Hacer un tween en Y al todo el logo de Slushi Engine. Si el valueY es 0, volera a la posicion original"
+          },
+        "setWindowBorderColor": {
+              "returns": "Int",
+              "args": "r:Int, g:Int, b:Int",
+              "documentation": "Cambia el color del borde de la ventana, SOLO en Windows 11"
+          },
+        "addShader3DToCamStrumsAndCamNotes": {
+              "returns": "boolean",
+              "args": "",
+              "documentation": "Agrega el shader 3D al camStrums y al camNotes"
+          },
+        "doTweenNotesShader3DInX": {
+              "returns": "Float",
+              "args": "tag:String, value:Dynamic, time:Float, easeStr:String = 'linear'",
+              "documentation": "Hace un tween en X del shader 3D de las notas"
+          },
+        "doTweenNotesShader3DInY": {
+              "returns": "Float",
+              "args": "tag:String, value:Dynamic, time:Float, easeStr:String = 'linear'",
+              "documentation": "Hace un tween en Y del shader 3D de las notas"
+          },
+        "doTweenNotesShader3DInZ": {
+              "returns": "Float",
+              "args": "tag:String, value:Dynamic, time:Float, easeStr:String = 'linear'",
+              "documentation": "Hace un tween en Z del shader 3D de las notas"
+          },
+          "doTweenNotesShader3DInDepth": {
+            "returns": "Float",
+            "args": "tag:String, value:Dynamic, time:Float, easeStr:String = 'linear'",
+            "documentation": "Hace un tween en Depth del shader 3D de las notas"
         }
-      }
+        }
     }
